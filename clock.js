@@ -29,7 +29,7 @@ var postNewArticle = function() {
 
 	  	request({
 	    	method: 'POST',
-	    	url: 'https://graph.facebook.com/' + process.env.113973922531420 + '/feed',
+	    	url: 'https://work-72993965.facebook.com/' + process.env.113973922531420 + '/feed',
 	    	qs: {
 	    		'access_token': process.env.DQVJ1MlpKRXFoRm9jeXl1bnVTbWp2akVqcFhEb090S08tdTFfb0hMcDVuZAGZAOQXRKamlHeTBLOUZAhRDcyU3hyR2haOThOSGdnblpSTXhTaXA4cGppT1BUbVZA0dXJmWTlrcjJzY01iSE9JdVd0SUdRbUlQSE9jalo2ak03RVlpYXBnVTI5RnZASNmludmxUbE1SaUNYdWFQN09nQnFSeE1ZAc3BfaFowMi00Uy1LOWlBTzZAYWjVyQXotbzRaT3dUWTlMNkx1d2x3,
 	    		'message': article.title,
