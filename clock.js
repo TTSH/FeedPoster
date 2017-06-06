@@ -31,7 +31,7 @@ var postNewArticle = function() {
 	    	method: 'POST',
 	    	url: 'https://graph.facebook.com/' + process.env.113973922531420 + '/feed',
 	    	qs: {
-	    		'access_token': process.env.DQVJ1MlpKRXFoRm9jeXl1bnVTbWp2akVqcFhEb090S08tdTFfb0hMcDVuZAGZAOQXRKamlHeTBLOUZAhRDcyU3hyR2haOThOSGdnblpSTXhTaXA4cGppT1BUbVZA0dXJmWTlrcjJzY01iSE9JdVd0SUdRbUlQSE9jalo2ak03RVlpYXBnVTI5RnZASNmludmxUbE1SaUNYdWFQN09nQnFSeE1ZAc3BfaFowMi00Uy1LOWlBTzZAYWjVyQXotbzRaT3dUWTlMNkx1d2x3,
+	    		'access_token': process.env.DQVJ0RFJyZA05HVzhBUWlKWGFhLWZAVaTBoZAFVqMlViSm53MjZAsQXFMU2FaUHc5SGkybm5xeE4wV0g5RFFrMmswSlpoV3ljTDQ1ei04d0xId3pHbDVoYU9HQUUxLUU3S215akI1blZAlaURndEo1SEdVc3R4N1BNVWQ5N2dVRnhLN01wdDlmZAENCTERUVXRoNUM5TkE2dUdra2NsUTJmVnM1LS1NcldBcWluOFo5QkNLZADNaWDdtMUJWZAGNZAREt1V3Nza0RvNERn,
 	    		'message': article.title,
 	    		'link': article.link
 	    	}
