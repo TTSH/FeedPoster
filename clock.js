@@ -13,7 +13,7 @@ var last_check = Date.now();
 
 var postNewArticle = function() {
 	console.log('Checking for new posts');
-	feed(process.env.FEED_URL, function(err, articles) {
+	feed(process.env.http://feeds2.feedburner.com/Swissmiss, function(err, articles) {
 	  if (err) throw err;
 
 	  for ( i in articles ) {
@@ -29,9 +29,9 @@ var postNewArticle = function() {
 
 	  	request({
 	    	method: 'POST',
-	    	url: 'https://graph.facebook.com/' + process.env.TARGET_GROUP + '/feed',
+	    	url: 'https://graph.facebook.com/' + process.env.113973922531420 + '/feed',
 	    	qs: {
-	    		'access_token': process.env.ACCESS_TOKEN,
+	    		'access_token': process.env.DQVJ1MlpKRXFoRm9jeXl1bnVTbWp2akVqcFhEb090S08tdTFfb0hMcDVuZAGZAOQXRKamlHeTBLOUZAhRDcyU3hyR2haOThOSGdnblpSTXhTaXA4cGppT1BUbVZA0dXJmWTlrcjJzY01iSE9JdVd0SUdRbUlQSE9jalo2ak03RVlpYXBnVTI5RnZASNmludmxUbE1SaUNYdWFQN09nQnFSeE1ZAc3BfaFowMi00Uy1LOWlBTzZAYWjVyQXotbzRaT3dUWTlMNkx1d2x3,
 	    		'message': article.title,
 	    		'link': article.link
 	    	}
@@ -55,6 +55,6 @@ new CronJob({
   cronTime: process.env.CRON_PATTERN,
   onTick: postNewArticle,
   start: true,
-  timeZone: "America/Los_Angeles"
+  timeZone: "GMT+8"
 });
 console.log(process.env.CRON_PATTERN);
