@@ -1,0 +1,3 @@
+git rm -r --cached EmployeeSurvey
+git commit -m "Removed folder from repository"
+git push origin master
