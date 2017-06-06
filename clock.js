@@ -13,7 +13,7 @@ var last_check = Date.now();
 
 var postNewArticle = function() {
 	console.log('Checking for new posts');
-	feed(process.env.http://feeds.bbci.co.uk/news/rss.xml?edition=int, function(err, articles) {
+	feed(process.env.http://feeds.bbci.co.uk/news/rss.xml, function(err, articles) {
 	  if (err) throw err;
 
 	  for ( i in articles ) {
