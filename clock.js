@@ -52,9 +52,9 @@ var postNewArticle = function() {
 
 var CronJob = require('cron').CronJob;
 new CronJob({
-  cronTime: process.env.CRON_PATTERN,
+  cronTime: process.env.* * * * * *,
   onTick: postNewArticle,
   start: true,
   timeZone: "GMT+8"
 });
-console.log(process.env.CRON_PATTERN);
+console.log(process.env.* * * * * *);
